@@ -33,11 +33,11 @@ pipeline{
                sh 'docker build -t sivasankars1990/final-project:1 .'
            }
          }
-        //stage('login to docker hub'){
-          //  steps{
-            //    sh ''
-            //}
-        //}   
+        stage('port expose'){
+            steps{
+                sh 'docker run -dt -p 8085-8085 --sivasankars1990/final-project:2'
+            }
+        }   
         //stage('push the docker file'){
           //  steps{
             //    sh 'docker login -u sivasankars1990 -p ${} '
