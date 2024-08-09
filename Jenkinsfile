@@ -30,7 +30,7 @@ pipeline{
         }
         stage('run dockerfile'){
           steps{
-               sh 'docker build -t sivasankars1990/final-project:1.0 .'
+               sh 'docker build -t sivasankars1990/final-project:1 .'
            }
          }
         //stage('port expose'){
