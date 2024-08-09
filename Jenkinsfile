@@ -35,13 +35,8 @@ pipeline{
          }
         stage('port expose'){
             steps{
-                sh 'docker run -dt -p 8085-8085 --sivasankars1990/final-project:2'
+                sh 'docker run -dt -p 8085-8085 --name c000 myimg'
             }
         }   
-        //stage('push the docker file'){
-          //  steps{
-            //    sh 'docker login -u sivasankars1990 -p ${} '
-            //}
-        //}   
     }
 }
