@@ -30,13 +30,13 @@ pipeline{
         }
         stage('run dockerfile'){
           steps{
-               sh 'docker build -t myimg .'
+               sh 'docker build -t sivasankars1990/final-project:1 .'
            }
          }
-        stage('port expose'){
-            steps{
-                sh 'docker run -dt -p 8085-8085 --name c005 myimg'
-            }
-        }   
+        //stage('port expose'){
+          //  steps{
+            //    sh 'docker run -dt -p 8085-8085 --name c005 myimg'
+            //}
+        //}   
     }
 }
