@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-k8s
-          image: sivasankars1990/endproject:v1 # Image that will be used to containers in the cluster
+          image: sivasankars1990/endproject1:v1 # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8091 # The port that the container is running on in the cluster
