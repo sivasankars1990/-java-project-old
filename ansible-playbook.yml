@@ -11,7 +11,3 @@
 
   - name : Start Docker Service
     command : sudo systemctl start docker
-
-  
-
-
