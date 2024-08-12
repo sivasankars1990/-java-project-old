@@ -33,10 +33,10 @@ pipeline{
                sh 'docker build -t sivasankars1990/project:3 .'
            }
          }
-        //stage('port expose'){
-          //  steps{
-            //    sh 'docker run -dt -p 8085-8085 --name c005 myimg'
-            //}
-        //}   
+        stage('port expose'){
+            steps{
+                sh 'docker run -dt -p 8085-8085 --name c005 myimg'
+            }
+        }   
     }
 }
